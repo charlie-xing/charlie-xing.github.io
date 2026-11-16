@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>蚌壳拼音 隐私政策</title>
+<style>
+  :root {
+    --bg: #ffffff;
+    --fg: #1a1a1a;
+    --muted: #5c5c5c;
+    --rule: #e2e2e2;
+    --accent: #1565c0;
+    --note-bg: #f5f7fa;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #16181c;
+      --fg: #e8e8e8;
+      --muted: #a0a4ab;
+      --rule: #2f333a;
+      --accent: #6aa9f0;
+      --note-bg: #1e2127;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    background: var(--bg);
+    color: var(--fg);
+    font: 16px/1.75 -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB",
+          "Microsoft YaHei", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 48px 16px 80px;
+  }
+  main { max-width: 720px; margin: 0 auto; }
+  h1 { font-size: 1.9rem; line-height: 1.3; margin: 0 0 4px; }
+  h2 {
+    font-size: 1.15rem;
+    margin: 40px 0 10px;
+    padding-top: 18px;
+    border-top: 1px solid var(--rule);
+  }
+  .dates { color: var(--muted); font-size: 0.9rem; margin-bottom: 6px; }
+  .langs { font-size: 0.9rem; margin-bottom: 28px; }
+  .langs span { color: var(--muted); }
+  .langs a { margin-right: 4px; }
+  .lede {
+    background: var(--note-bg);
+    border-left: 3px solid var(--accent);
+    padding: 14px 16px;
+    border-radius: 0 6px 6px 0;
+    margin: 0 0 8px;
+  }
+  table { border-collapse: collapse; width: 100%; margin: 12px 0; font-size: 0.93rem; }
+  th, td { text-align: left; padding: 9px 10px; border-bottom: 1px solid var(--rule); vertical-align: top; }
+  th { font-weight: 600; }
+  code {
+    font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+    font-size: 0.88em;
+    background: var(--note-bg);
+    padding: 1px 5px;
+    border-radius: 3px;
+  }
+  a { color: var(--accent); }
+  ul { padding-left: 22px; }
+  li { margin: 5px 0; }
+  footer { margin-top: 48px; padding-top: 18px; border-top: 1px solid var(--rule); color: var(--muted); font-size: 0.88rem; }
+</style>
+</head>
+<body>
+<main>
+
+  <h1>蚌壳拼音 隐私政策</h1>
+  <p class="dates">生效日期 2026 年 11 月 16 日 · 最后更新 2026 年 11 月 16 日</p>
+  <p class="langs"><a href="privacy-policy.html">English</a> · <span>中文</span></p>
+
+  <p class="lede">
+    <strong>蚌壳拼音（<code>com.bangke.android</code>）不收集、不传输、不共享任何个人数据。</strong>
+    本应用没有账号体系、没有数据统计、没有广告、没有服务器，也未申请网络访问权限。
+    所有输入内容与离线模型推理均仅保留在您的设备本地。
+  </p>
+
+  <h2>我们收集的信息</h2>
+  <p>
+    <strong>没有。</strong>开发者不运营任何后端服务，也不会从本应用接收任何数据。
+    蚌壳拼音不包含任何数据统计、崩溃上报、广告或追踪类 SDK，也未申请 Android 的
+    <code>INTERNET</code> 网络权限。
+  </p>
+
+  <h2>在您设备上处理的信息</h2>
+  <p>以下内容完全在您的设备本地处理，用于实现输入法功能，不会被发送出设备。</p>
+  <table>
+    <tr><th>内容</th><th>用途</th><th>去向</th></tr>
+    <tr>
+      <td>按键序列、拼音与手写笔迹</td>
+      <td>生成中文与英文候选词</td>
+      <td>由随应用内置的 Rime 引擎、九键整句纠错模型及手写识别模型在本地实时处理，从不上传。</td>
+    </tr>
+    <tr>
+      <td>光标前文字（开启“离线 AI 候选”时）</td>
+      <td>在简体全拼模式下提供结合上下文的候选建议</td>
+      <td>仅在设备本地按需读取并交给内置离线模型推理；密码框及要求禁止个性化学习的输入框自动停用，也可在「AI 设置」中随时关闭。不会上传，也不会写入诊断日志。</td>
+    </tr>
+    <tr>
+      <td>剪贴板历史（开启“记录剪贴板历史”时）</td>
+      <td>方便在剪贴板面板中快速粘贴近期复制的内容</td>
+      <td>仅保存在应用本地私有数据库中，可随时在剪贴板面板清空或在设置中关闭。</td>
+    </tr>
+    <tr>
+      <td>自定义主题图片（可选）</td>
+      <td>自定义键盘背景外观</td>
+      <td>仅在您主动选择自定义主题图片时通过系统图片选择器读取所选图片，并保存在应用本地目录。</td>
+    </tr>
+    <tr>
+      <td>设备通讯录姓名（可选）</td>
+      <td>输入完整拼音时优先匹配通讯录中的联系人姓名</td>
+      <td>仅在您明确授予通讯录权限后于本地读取并建立索引，从不上传或离开您的设备。</td>
+    </tr>
+  </table>
+
+  <h2>权限说明</h2>
+  <table>
+    <tr><th>权限</th><th>蚌壳拼音为何需要</th></tr>
+    <tr><td><code>VIBRATE</code></td><td>用于按键触感震动反馈，可在设置中关闭。</td></tr>
+    <tr><td><code>READ_CONTACTS</code>（可选）</td><td>用于可选的通讯录姓名本地匹配与候选置顶。</td></tr>
+  </table>
+
+  <h2>数据共享</h2>
+  <p>
+    蚌壳拼音不与任何第三方共享数据。应用内没有第三方统计 SDK、没有广告合作方，也没有远程数据处理方——因为没有任何输入或个人数据会离开您的设备。
+    需要说明的是，Emoji 显示使用 Android 系统字体服务；部分设备的系统字体服务可能自行联网获取字体，适用该系统服务的隐私政策，本应用不会向其提供您的输入内容。
+  </p>
+
+  <h2>数据保留与删除</h2>
+  <p>
+    您的个人设置、本地词库与剪贴板历史仅保存在设备本地存储中。您可以随时在应用内清空剪贴板、在系统应用设置中清除存储数据，或直接卸载应用将其全部删除。如果您使用了“其他 → 导出用户数据”功能，生成的备份压缩包仅保存在您指定的位置。
+  </p>
+
+  <h2>儿童隐私</h2>
+  <p>
+    蚌壳拼音是一款通用输入法工具，并非面向儿童设计，也不会在知情的情况下收集任何年龄段用户的个人信息。
+  </p>
+
+  <h2>本政策的变更</h2>
+  <p>
+    如本隐私政策发生变更，更新后的版本将发布在本页面并标注新的“最后更新”日期；重要变更也会同步更新至应用内的隐私政策说明页。
+  </p>
+
+  <h2>联系方式</h2>
+  <p>
+    如果您对本政策或蚌壳拼音的数据处理方式有任何疑问，请联系：
+    <a href="mailto:xjohn1666@gmail.com">xjohn1666@gmail.com</a>
+  </p>
+
+  <footer>
+    蚌壳拼音 —— 全程离线运行的 Android 中文输入法。
+  </footer>
+
+</main>
+</body>
+</html>
